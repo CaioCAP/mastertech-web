@@ -1,6 +1,6 @@
 <!doctype html>
 
-<html lang="en">
+<html lang="en" ng-app>
 <head>
   <meta charset="utf-8">
   <title>Mastertech</title>
@@ -34,6 +34,7 @@
       </div>
     </nav>
     <div class="container">
+      <h1>Teste de lista</h1>
       <div class="row">
         <div class="col-sm-2 borda-azul">1</div>
         <div class="col-sm-2 borda-azul">2</div>
@@ -42,10 +43,34 @@
         <div class="col-sm-2 borda-azul">5</div>
         <div class="col-sm-2 borda-azul">6</div>
       </div>
+  <!--  <div class="container">
+      <h1>Primeira Listagem</h1>
+      <div class="row">
+        <div class="col-sm-4 borda-azul"><h2>Moto X</h2></div>
+        <div class="col-sm-4 borda-azul"><h2>iPhone 5s</h2></div>
+        <div class="col-sm-4 borda-azul"><h2>iPhone 6</h2></div>
+        <div class="col-sm-4 borda-azul"><h2>Lumia 935</h2></div>
+      </div>
     </div>
-
+ -->
+      <h2>Lista de telefones</h2>
+      <div id="lista-dinamica" class="row">
+      </div>
+      <h2>Real para dolar</n2>
+        <div>
+          <div class="input-group">
+            <div class="input-group-addon">$</div>
+            <input ng-model = "valorReal" type="text" class="form-control" id="exampleInputAmount">
+          </div>
+        </div>
+        <div>
+          D${{valorReal / 4}}
+        </div>
+    </div>
+    <hr/>
   <script src="js/jquery-2.2.0.min.js"></script>
   <script src="js/bootstrap/bootstrap.min.js"></script>
   <script src="js/app.js"></script>
+  <script src="js/angular.min.js"></script>
 </body>
 </html>
